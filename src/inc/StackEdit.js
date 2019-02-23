@@ -1,41 +1,67 @@
 import { fromEvent, Subject } from 'rxjs';
-import { map, filter, debounceTime, mergeMap, switchMap, tap } from 'rxjs/operators';
+import { map, filter, debounceTime, tap } from 'rxjs/operators';
+import $ from 'jquery';
+
+import { getNode, Templates } from '../templates/Templates';
+import { ID_TPU_STACKEDIT_IFRAME } from '../templates/classes';
+
+const CLASS_JS_DESCRIPTION_DRAFT = 'js-description-draft';
+const CLASS_JS_SHOW_WITH_DESC = 'js-show-with-desc';
 
 export default class StackEdit
 {
-    constructor()
+    /**
+     * @public
+     */
+    init()
     {
-        // const { iif, Subject } = Rx;
+        $(document.body).append(getNode(Templates.TpuStackeditIframeWrapper, { iframeId: ID_TPU_STACKEDIT_IFRAME }));
+        this._startSE();
     }
 
-    startStackEdit()
+    /**
+     * @public
+     */
+    open()
+    {
+        $(`.${CLASS_JS_SHOW_WITH_DESC}`).click();
+        let content = $(`.${CLASS_JS_DESCRIPTION_DRAFT}`).val();
+
+        content = encodeURIComponent(content);
+
+        $(`#${ID_TPU_STACKEDIT_IFRAME}`).empty().append(getNode(Templates.IframeHtml, { content }));
+    }
+
+    _close()
+    {
+        $(`#${ID_TPU_STACKEDIT_IFRAME}`).empty();
+    }
+
+    _hanleChange()
     {
         const stackEditChange$ = new Subject().pipe(debounceTime(800));
-        const stackEditClose$ = new Subject();
 
         stackEditChange$.subscribe(val =>
         {
             console.log('stackEditChange val:', val);
         });
 
-        stackEditClose$.subscribe(val =>
-        {
-            console.log('stackEditClose val:', val);
-        });
+        return stackEditChange$;
+    }
+
+    _startSE()
+    {
+        const stackEditChange$ = this._hanleChange();
 
         const stackEdit$ = fromEvent(window, 'message')
             .pipe(
                 filter(event => event.origin === 'https://stackedit.io'),
                 map(event => event.data),
                 tap(data => console.log(data)),
-                // switchMap((data) =>
-                //     // data.type === 'fileChange' ? Rx.of({ ...data, fc: true }).pipe(debounceTime(800)) : Rx.of(data)
-                //     data.type === 'fileChange' ? stackEditChange$.next(data) : Rx.of(data)
-                // )
             )
             .subscribe(data =>
             {
-                console.log('Debounced Input:', data);
+                // console.log('Debounced Input:', data);
                 switch (data.type)
                 {
                     case 'fileChange':
@@ -43,6 +69,7 @@ export default class StackEdit
                         break;
                     case 'close':
                         console.log('close action');
+                        this._close();
                 }
             });
     }

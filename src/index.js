@@ -15,17 +15,13 @@ import Styles from '../css/Styles';
 import AddButton from './inc/AddButton';
 import StackEdit from './inc/StackEdit';
 
-let Rx;
-
 function ready()
 {
-    Rx = rxjs;
-    new Styles().init();
-    new StackEdit();
-    new AddButton().init();
+    const stackEdit = new StackEdit();
 
-    console.log(Rx);
+    new Styles().init();
+    stackEdit.init();
+    new AddButton(stackEdit).init();
 }
 
-loadDynamicScript('https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.4.0/rxjs.umd.min.js', 'tpuRxjs')
-    .then(setTimeout(ready, 1000));
+setTimeout(ready, 1000);
