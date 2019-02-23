@@ -1,4 +1,5 @@
 import { CLASS_JS_TPU_STACKEDIT } from '../templates/classes';
+// import styles from './index.css';
 
 export const Button = `<a class="button-link ${CLASS_JS_TPU_STACKEDIT}" href="#" title="Open in stackedit">
         <span class="icon-sm icon-small">

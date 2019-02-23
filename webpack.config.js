@@ -84,9 +84,9 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    require.resolve('style-loader'),
+                    'style-loader',
                     {
-                        loader: require.resolve('css-loader'),
+                        loader: 'css-loader',
                         options: {
                             importLoaders: 1,
                             modules: true,
@@ -96,38 +96,41 @@ module.exports = {
                             localIdentName: '[local]_[hash:base64:4]',
                         },
                     },
-                    {
-                        loader: require.resolve('postcss-loader'),
-                        options: {
-                            // Necessary for external CSS imports to work
-                            // https://github.com/facebookincubator/create-react-app/issues/2677
-                            ident: 'postcss',
-                            plugins: () => [
-                                require('postcss-flexbugs-fixes'),
-                                autoprefixer({
-                                    browsers: [
-                                        '>1%',
-                                        'last 4 versions',
-                                        'Firefox ESR',
-                                        'not ie < 9', // React doesn't support IE8 anyway
-                                    ],
-                                    flexbox: 'no-2009',
-                                }),
-                                require('postcss-global-import')({ sync: true }),
-                                require('postcss-nested')(),
-                                require('postcss-import'),
-                                require('postcss-use')({ modules: '*' }),
-                                require('postcss-at-rules-variables'),
-                                require('postcss-simple-vars'),
-                                require('postcss-calc'),
-                                require('postcss-conditionals'),
-                                require('postcss-color-function'),
-                                require('postcss-image-set-polyfill'),
-                                require('postcss-colour-functions'),
-                                require('postcss-custom-media'),
-                            ],
-                        },
-                    },
+                    { loader: 'postcss-loader', options: { config: { path: path.resolve(__dirname, './webpackinc') } } },
+                    // require('postcss-loader')({ config: { path: path.resolve(__dirname, './webpackinc') } }),
+
+                    // 'postcss-loader',
+                    // {
+                    //     // options: {
+                    //     //     // Necessary for external CSS imports to work
+                    //     //     // https://github.com/facebookincubator/create-react-app/issues/2677
+                    //     //     ident: 'postcss',
+                    //     //     plugins: () => [
+                    //     //         require('postcss-flexbugs-fixes'),
+                    //     //         autoprefixer({
+                    //     //             browsers: [
+                    //     //                 '>1%',
+                    //     //                 'last 4 versions',
+                    //     //                 'Firefox ESR',
+                    //     //                 'not ie < 9', // React doesn't support IE8 anyway
+                    //     //             ],
+                    //     //             flexbox: 'no-2009',
+                    //     //         }),
+                    //     //         require('postcss-global-import')({ sync: true }),
+                    //     //         require('postcss-nested')(),
+                    //     //         require('postcss-import'),
+                    //     //         require('postcss-use')({ modules: '*' }),
+                    //     //         require('postcss-at-rules-variables'),
+                    //     //         require('postcss-simple-vars'),
+                    //     //         require('postcss-calc'),
+                    //     //         require('postcss-conditionals'),
+                    //     //         require('postcss-color-function'),
+                    //     //         require('postcss-image-set-polyfill'),
+                    //     //         require('postcss-colour-functions'),
+                    //     //         require('postcss-custom-media'),
+                    //     //     ],
+                    //     // },
+                    // },
                 ],
             },
             {
