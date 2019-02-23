@@ -45,7 +45,7 @@ export default class StackEdit
 
         stackEditChange$.subscribe(val =>
         {
-            console.log('stackEditChange val:', val);
+            console.log('stackEditChange val:', [val, val.payload.content.text, $(`.${CLASS_JS_DESCRIPTION_DRAFT}`)]);
             $(`.${CLASS_JS_DESCRIPTION_DRAFT}`).val(val.payload.content.text);
         });
 
