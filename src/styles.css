@@ -1,0 +1,20 @@
+.stackedit-iframe-container {
+    background-color: #fff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 98%;
+    width: 98%;
+    max-width: 1800px;
+    border-radius: 2px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.icon-small {
+    width: 12px;
+    height: 12px;
+}
