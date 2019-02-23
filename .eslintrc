@@ -324,20 +324,9 @@
         "import/no-dynamic-require": 1,
         "import/no-deprecated": 1,
         "import/no-extraneous-dependencies": 0, // нужно настроить для нас
-        "jest/no-disabled-tests": "warn",
-        "jest/no-focused-tests": "error",
-        "jest/no-identical-title": "error",
-        "jest/valid-expect": "error",
         "yoda": ["error", "never", { "exceptRange": true }],
         "no-multiple-empty-lines": [2, {
             "max": 2
-        }],
-        "flowtype/use-flow-type": 1,
-        "flowtype/define-flow-type": 1,
-        "flowtype/no-weak-types": [1, {
-            "any": true,
-            "Object": false,
-            "Function": false
         }],
         "object-curly-spacing": ["error", "always"],
         "react/jsx-curly-brace-presence": [1, "never"]

@@ -6,7 +6,7 @@
 // @match http://trello.com/*
 // ==/UserScript==
 
-import Templates from './inc/Templates';
+import { Templates, getNode } from './templates/Templates';
 
 const ID_TPU_STACKEDIT_IFRAME = 'JSTpuStackeditIframe';
 const CLASS_JS_SHOW_WITH_DESC = 'js-show-with-desc';
@@ -90,7 +90,7 @@ class Styles
 
     _addStyles()
     {
-        document.head.appendChild(Templates.getNode(Templates.Styles));
+        document.head.appendChild(getNode(Templates.Styles));
     }
 
     _createStyle()
@@ -109,7 +109,7 @@ class AddButton
     constructor()
     {
         this._listChangeHandler = Utils.throttle(2000, this._listChangeHandler);
-        $(document.body).append(Templates.TpuStackeditIframeWrapper);
+        $(document.body).append(getNode(Templates.TpuStackeditIframeWrapper, {iframeId: ID_TPU_STACKEDIT_IFRAME}));
     }
 
     init()
@@ -124,7 +124,7 @@ class AddButton
         if (!firstList.hasClass('js-btn-added'))
         {
             console.log('try add button');
-            firstList.prepend(Templates.getNode(Templates.Button)).addClass('js-btn-added');
+            firstList.prepend(getNode(Templates.Button)).addClass('js-btn-added');
             $('.js-tpu-stackedit').click(this._addButtonClickHandler);
         }
     }
@@ -136,11 +136,7 @@ class AddButton
 
         content = encodeURIComponent(content);
 
-        const iframeHtml = `<div class="stackedit-iframe-container" data-style="position: absolute; top: 0; left: 0; z-index: 1000">
-            <iframe style="width: 100%; height: 100%;" src="https://stackedit.io/app#origin=https%3A%2F%2Ftrello.com&fileName=trello.com&contentText={{{content}}}" class="stackedit-iframe"></iframes>
-            </div>`;
-
-        $(`#${ID_TPU_STACKEDIT_IFRAME}`).html(Templates.IframeHtml.replace('{{{content}}}', content));
+        $(`#${ID_TPU_STACKEDIT_IFRAME}`).remove().append(getNode(Templates.IframeHtml, { content }));
     }
 
     _listChangeHandler(observer, p2, p3)
