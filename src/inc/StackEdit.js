@@ -7,6 +7,7 @@ import { ID_TPU_STACKEDIT_IFRAME } from '../templates/classes';
 
 const CLASS_JS_DESCRIPTION_DRAFT = 'js-description-draft';
 const CLASS_JS_SHOW_WITH_DESC = 'js-show-with-desc';
+const JS_SAVE_EDIT = 'js-save-edit';
 
 export default class StackEdit
 {
@@ -35,6 +36,7 @@ export default class StackEdit
     _close()
     {
         $(`#${ID_TPU_STACKEDIT_IFRAME}`).empty();
+        $(`.${JS_SAVE_EDIT}`).click();
     }
 
     _hanleChange()
@@ -44,6 +46,7 @@ export default class StackEdit
         stackEditChange$.subscribe(val =>
         {
             console.log('stackEditChange val:', val);
+            $(`.${CLASS_JS_DESCRIPTION_DRAFT}`).val(val.payload.content.text);
         });
 
         return stackEditChange$;
@@ -57,7 +60,7 @@ export default class StackEdit
             .pipe(
                 filter(event => event.origin === 'https://stackedit.io'),
                 map(event => event.data),
-                tap(data => console.log(data)),
+                // tap(data => console.log(data)),
             )
             .subscribe(data =>
             {
