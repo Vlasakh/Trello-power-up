@@ -6,6 +6,8 @@
 // @match http://trello.com/*
 // ==/UserScript==
 
+import $ from 'jquery';
+
 import { Templates, getNode } from './templates/Templates';
 
 const ID_TPU_STACKEDIT_IFRAME = 'JSTpuStackeditIframe';
@@ -109,7 +111,7 @@ class AddButton
     constructor()
     {
         this._listChangeHandler = Utils.throttle(2000, this._listChangeHandler);
-        $(document.body).append(getNode(Templates.TpuStackeditIframeWrapper, {iframeId: ID_TPU_STACKEDIT_IFRAME}));
+        $(document.body).append(getNode(Templates.TpuStackeditIframeWrapper, { iframeId: ID_TPU_STACKEDIT_IFRAME }));
     }
 
     init()
@@ -136,7 +138,7 @@ class AddButton
 
         content = encodeURIComponent(content);
 
-        $(`#${ID_TPU_STACKEDIT_IFRAME}`).remove().append(getNode(Templates.IframeHtml, { content }));
+        $(`#${ID_TPU_STACKEDIT_IFRAME}`).empty().append(getNode(Templates.IframeHtml, { content }));
     }
 
     _listChangeHandler(observer, p2, p3)
@@ -223,6 +225,7 @@ class Utils
     }
 }
 
-Utils.loadDynamicScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', 'tpuJquery')
-    .then(() => Utils.loadDynamicScript('https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.4.0/rxjs.umd.min.js', 'tpuRxjs'))
+// Utils.loadDynamicScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', 'tpuJquery')
+//     .then(() =>
+    Utils.loadDynamicScript('https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.4.0/rxjs.umd.min.js', 'tpuRxjs')
     .then(setTimeout(ready, 1000));
