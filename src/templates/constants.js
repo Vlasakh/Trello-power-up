@@ -8,7 +8,7 @@ export const Button = `<a class="button-link ${CLASS_JS_TPU_STACKEDIT}" href="#"
         <span>Edit SE</span>
     </a>`;
 export const Styles =
-    '<link rel="stylesheet" type="text/css" href="https://927ow4oqqr.codesandbox.io/src/styles.css" media="all"/>';
+    '<link rel="stylesheet" type="text/css" href="https://vlasakh.github.io/Trello-power-up/src/styles.css" media="all"/>';
 export const TpuStackeditIframeWrapper = '<div id="%{iframeId}"></div>';
 export const IframeHtml = `<div class="stackedit-iframe-container" data-style="position: absolute; top: 0; left: 0; z-index: 1000">
             <iframe style="width: 100%; height: 100%;" src="https://stackedit.io/app#origin=https%3A%2F%2Ftrello.com&fileName=trello.com&contentText=%{content}" class="stackedit-iframe"></iframes>

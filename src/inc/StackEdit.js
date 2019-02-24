@@ -31,6 +31,7 @@ export default class StackEdit
         content = encodeURIComponent(content);
 
         $(`#${ID_TPU_STACKEDIT_IFRAME}`).empty().append(getNode(Templates.IframeHtml, { content }));
+        // stackedit-iframe-container
     }
 
     _close()
