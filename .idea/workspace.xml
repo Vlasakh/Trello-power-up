@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61099341-1f64-47c8-9c0f-bd45d740ef79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/inc/AddButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/inc/AddButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/main-a24c52b86d4a4905e966.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +134,7 @@
       <updated>1550900762752</updated>
       <workItem from="1550900763926" duration="24582000" />
       <workItem from="1565708171069" duration="145000" />
-      <workItem from="1565708656739" duration="1431000" />
+      <workItem from="1565708656739" duration="2268000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550911913740</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565709364066</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="changed block for button">
+      <created>1565710262569</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565710262569</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
