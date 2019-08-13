@@ -26,7 +26,7 @@ export default class AddButton
 
     _addButton()
     {
-        const firstList = $('.window-sidebar .window-module .u-clearfix').first();
+        const firstList = $('.window-sidebar .window-module .u-clearfix').first().next();
 
         if (!firstList.hasClass(CLASS_JS_BTN_ADDED))
         {
