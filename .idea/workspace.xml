@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61099341-1f64-47c8-9c0f-bd45d740ef79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/main-feae56cb1bd7631a9ebf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/main-a24c52b86d4a4905e966.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inc/AddButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/inc/AddButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +159,7 @@
       <workItem from="1550900763926" duration="24582000" />
       <workItem from="1565708171069" duration="145000" />
       <workItem from="1565708656739" duration="5348000" />
-      <workItem from="1565782025713" duration="2652000" />
+      <workItem from="1565782025713" duration="2934000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550911913740</created>
@@ -244,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565715908714</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="test">
+      <created>1565787209169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565787209169</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +271,8 @@
     <MESSAGE value="02" />
     <MESSAGE value="styles" />
     <MESSAGE value="changed block for button" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed block for button" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
