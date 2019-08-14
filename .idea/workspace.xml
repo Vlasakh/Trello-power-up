@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61099341-1f64-47c8-9c0f-bd45d740ef79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/main-a24c52b86d4a4905e966.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/main-feae56cb1bd7631a9ebf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/main-a24c52b86d4a4905e966.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inc/AddButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/inc/AddButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +116,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start:publish">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Trello-power-up/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="start:client" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -121,6 +130,27 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start:publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:publish" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.start:client" />
+      <item itemvalue="npm.start:publish" />
+      <item itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:publish" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\User\AppData\Roaming\Subversion</configuration>
@@ -134,7 +164,8 @@
       <updated>1550900762752</updated>
       <workItem from="1550900763926" duration="24582000" />
       <workItem from="1565708171069" duration="145000" />
-      <workItem from="1565708656739" duration="2268000" />
+      <workItem from="1565708656739" duration="5348000" />
+      <workItem from="1565782025713" duration="2652000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550911913740</created>
@@ -206,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565710262569</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="changed block for button">
+      <created>1565715908714</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565715908714</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

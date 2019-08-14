@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import $ from 'jquery';
 
 import throttle from '@tinkoff/utils/function/throttle';
@@ -8,57 +9,52 @@ import { CLASS_JS_TPU_STACKEDIT } from '../templates/classes';
 const CLASS_JS_TAB_PARENT = 'js-tab-parent';
 const CLASS_JS_BTN_ADDED = 'js-btn-added';
 
-export default class AddButton
-{
+export default class AddButton {
     stackEdit;
 
-    constructor(stackEdit)
-    {
+    constructor(stackEdit) {
         this.stackEdit = stackEdit;
         this._listChangeHandler = throttle(2000, this._listChangeHandler);
 
     }
 
-    init()
-    {
+    init() {
         this._addOpenerObserver();
     }
 
-    _addButton()
-    {
-        const firstList = $('.window-sidebar .window-module .u-clearfix').first().next();
+    _addButton() {
+        const firstList = $('.window-sidebar .window-module .u-clearfix').first();
+        console.log('firstList', firstList);
 
-        if (!firstList.hasClass(CLASS_JS_BTN_AwebDDED))
-        {
+        if (!firstList.hasClass(CLASS_JS_BTN_ADDED)) {
             console.log('try add button');
             firstList.prepend(getNode(Templates.Button)).addClass(CLASS_JS_BTN_ADDED);
             $('.' + CLASS_JS_TPU_STACKEDIT).click(this._handleOpenClick.bind(this));
         }
     }
 
-    _handleOpenClick()
-    {
+    _handleOpenClick() {
         this.stackEdit.open();
     }
 
-    _listChangeHandler()
-    {
-        if ($(`.${CLASS_JS_TAB_PARENT}`).is(':visible'))
-        {
+    _listChangeHandler() {
+        if ($(`.${CLASS_JS_TAB_PARENT}`).is(':visible')) {
             console.log('visible');
             this._addButton();
         }
     }
 
-    _addOpenerObserver()
-    {
-        var observer = new MutationObserver(() =>
+    _addOpenerObserver() {
+        const observer = new MutationObserver(() =>
             this._listChangeHandler());
+        const node = document.querySelector(`.${CLASS_JS_TAB_PARENT}`);
 
-        observer.observe(document.querySelector(`.${CLASS_JS_TAB_PARENT}`), {
+        observer.observe(node, {
             childList: true,
             subtree: true,
             attributes: true,
         });
+
+        setTimeout(() => $(node).prepend('<div>Test node</div>'), 500);
     }
 }

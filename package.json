@@ -1,11 +1,12 @@
 {
     "name": "Trello-power-up",
-    "version": "1.0.14",
+    "version": "1.0.22",
     "description": "",
     "main": "index.html",
     "scripts": {
         "start": "parcel index.html --open",
         "start:client": "webpack --watch --watch-aggregate-timeout 300 --env.patch",
+        "start:publish": "set PUBLISH=true&&webpack --env.patch",
         "build": "parcel build index.html"
     },
     "dependencies": {
