@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="61099341-1f64-47c8-9c0f-bd45d740ef79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inc/AddButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/inc/AddButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/constants.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,37 +23,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>eslint-loader</find>
-      <find>react</find>
-      <find>ally</find>
-      <find>eslint-plugin-jsx-a11y</find>
-      <find>chunk</find>
-      <find>extract-css-chunks-webpack-plugin</find>
-      <find>extractSass</find>
-      <find>jest-no</find>
-      <find>TpuStackeditIframeWrapper</find>
-      <find>jest</find>
-      <find>flow</find>
-      <find>getNode</find>
-      <find>Templates</find>
-      <find>Utils</find>
-      <find>throttle</find>
-      <find>loadDynamicScript</find>
-      <find>AddButton</find>
-      <find>js-tpu-stackedit</find>
-      <find>draft</find>
-      <find>CLASS_JS_SHOW_WITH_DESC</find>
-      <find>js-tab-parent</find>
-      <find>CLASS_JS_BTN_ADDED</find>
-      <find>CLASS_JS_TPU_STACKEDIT</find>
-      <find>StackEdit</find>
-      <find>ID_TPU_STACKEDIT_IFRAME</find>
-      <find>postcss-loader</find>
-      <find>env</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -161,7 +131,7 @@
       <workItem from="1565708171069" duration="145000" />
       <workItem from="1565708656739" duration="5348000" />
       <workItem from="1565782025713" duration="3004000" />
-      <workItem from="1565787654918" duration="196000" />
+      <workItem from="1565787654918" duration="1916000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550911913740</created>
@@ -261,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565787721847</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="no third cascade">
+      <created>1565787868837</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1565787868837</updated>
+    </task>
+    <task id="LOCAL-00016" summary="no third cascade">
+      <created>1565788117814</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1565788117814</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

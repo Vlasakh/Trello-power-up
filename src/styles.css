@@ -14,7 +14,20 @@
     z-index: 1000;
 }
 
-.icon-small {
+/*.icon-small {
+    width: 12px;
+    height: 12px;
+}*/
+
+.button-link > .icon-sm {
+    position: relative;
+    display: inline-block;
+}
+
+.posBlock {
+    position: relative;
+    display: block;
+    margin: -8px 6px 0 -2px;
     width: 12px;
     height: 12px;
 }
