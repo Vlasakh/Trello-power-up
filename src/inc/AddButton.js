@@ -23,7 +23,7 @@ export default class AddButton {
     }
 
     _addButton() {
-        const firstList = $('.window-sidebar .window-module .u-clearfix').first();
+        const firstList = $('.window-sidebar .window-module.u-clearfix').first();
 
         if (!firstList.hasClass(CLASS_JS_BTN_ADDED)) {
             console.log('try add button');
