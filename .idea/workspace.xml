@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61099341-1f64-47c8-9c0f-bd45d740ef79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/constants.js" afterDir="false" />
-    </list>
+    <list default="true" id="61099341-1f64-47c8-9c0f-bd45d740ef79" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,7 @@
       <workItem from="1565708171069" duration="145000" />
       <workItem from="1565708656739" duration="5348000" />
       <workItem from="1565782025713" duration="3004000" />
-      <workItem from="1565787654918" duration="1916000" />
+      <workItem from="1565787654918" duration="2727000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550911913740</created>
@@ -245,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565788117814</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixed view of svg icon">
+      <created>1565789836099</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1565789836099</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +277,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="hm..." />
     <MESSAGE value="no third cascade" />
-    <option name="LAST_COMMIT_MESSAGE" value="no third cascade" />
+    <MESSAGE value="fixed view of svg icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed view of svg icon" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
