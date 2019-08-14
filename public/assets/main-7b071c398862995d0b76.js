@@ -1,4 +1,4 @@
-// [AIV_SHORT]  Build version: 1.0.26 - Wednesday, August 14th, 2019, 4:36:49 PM  
+// [AIV_SHORT]  Build version: 1.0.28 - Wednesday, August 14th, 2019, 6:50:06 PM  
  /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
