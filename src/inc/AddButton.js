@@ -54,7 +54,5 @@ export default class AddButton {
             subtree: true,
             attributes: true,
         });
-
-        setTimeout(() => $(node).prepend('<div>Test node</div>'), 500);
     }
 }
